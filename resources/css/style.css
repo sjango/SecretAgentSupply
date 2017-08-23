@@ -71,16 +71,22 @@ header {
 
 header nav {
 	background-color: firebrick;
-}
-
-#main-nav {
-	display: flex;
-	justify-content: space-between;
 	color: white;
 }
 
-#main-nav span {
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu li {
+	padding: 0.75rem 0;	
+}
+
+.menu-button {
 	padding: 0.75rem 0;
+	display: none;
 }
 
 /* main website section */
@@ -147,4 +153,36 @@ footer {
 
 footer h4 {
 
+}
+
+@media only screen and (max-width: 1024px) {
+	.container {
+		width: 100%;
+	}
+
+	.menu {
+		display: none;
+	}
+	
+	#main-nav {
+		display: flex;
+	}
+	.menu-button {
+		display: block;
+		margin: 0 auto;
+	}
+
+	#product3 {
+		display: none;
+	}
+
+	.productcontainer {
+		width: 47%;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.banner {
+		height: 15rem;
+	}
 }
