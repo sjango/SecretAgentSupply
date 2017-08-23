@@ -138,9 +138,6 @@ header nav {
 	padding: 1rem 2rem;
 }
 
-.adress p {
-
-}
 
 footer {
 	margin-top: 4rem;
@@ -184,5 +181,48 @@ footer h4 {
 @media only screen and (max-width: 470px) {
 	.banner {
 		height: 15rem;
+	}
+
+	.banner-textbox h3 {
+		font-size: 0.77rem;
+		padding: 1rem 2rem 0rem 2rem;
+	}
+
+	.banner-textbox h2 {
+		font-size: 1rem;
+		padding: 0.25rem 2rem 1rem 2rem;
+	}
+
+	.banner-textbox {
+		padding-top: 10rem;
+		width: 100%;
+	}
+
+	#product2 {
+		display: none;
+	}
+
+	#product1 {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.location {
+		flex-direction: column;
+		align-content: flex-start;
+
+	}
+
+	.adress {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.adress p {
+		margin-bottom: 0.5rem;
+	}
+
+	footer {
+		text-align: center;
 	}
 }
